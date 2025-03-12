@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  */
+* {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.logo {
+    border-radius: 40%;
+    margin: 0 1rem;
+}
+
+.nab-name {
+    font-size: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+.nav-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.nav-items {
+    margin: 1rem;
+    list-style-type: none;
+}
+.items-link {
+    text-decoration: none;
+}
+
+
+.items-link:hover {
+    color: red;
+
+}
+
+/* hero section */
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.hero-left, hero-right {
+    width: 100%;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.hero-container {
+    text-align: left;
+    padding-left: 1rem;
+}
+.container {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.description {
+    padding: 01rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+
+    .hero-left {
+        width: 40%;
+    }
+    .hero-right {
+        width: 60%;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1320px;
+    }
+}
