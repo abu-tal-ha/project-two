@@ -16,11 +16,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    max-width: 1400px;
+    margin: auto;
 }
 .navbar-container {
     display: flex;
     align-items: center;
     padding-top: 1rem;
+
 }
 
 .navbar-left {
@@ -50,7 +53,26 @@ body {
 .nav-items {
     margin: 1rem;
     list-style-type: none;
+    position: relative;
+    padding: 10px;
 }
+
+
+.nav-items::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.nav-items:hover::after {
+    width: 100%;
+}
+
 .items-link {
     text-decoration: none;
 }
@@ -87,10 +109,97 @@ body {
     text-align: left;
     padding-left: 1rem;
 }
+
+
+/* resume section start */
+.resume-container {
+    margin-top: 1rem;
+    padding: 6.5rem 1rem 0 1rem;
+    min-height: 100vh;
+}
+.resume-sub-container {
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+
+}
+.resume-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    grid: 1.25rem;
+    border-left: 1px solid #333;
+
+}
+.resume-duration-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.resume-duration-container .rounded {
+    position: absolute;
+    left: -14px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: gray;
+    border:1px solid #333;
+}
+.resume-duration {
+    background-color: black;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    width: auto;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+
+}
+.resume-image {
+    display: block;
+    margin: 0 auto;
+}
+.resume-company {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.resume-designation {
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+.line {
+    background-color: #333;
+    width: 100px;
+    height: 2px;
+    margin: 0.25rem 0 2rem 0;
+}
+.inner-line {
+    background-color: rgb(59 130 246);
+    width: 50px;
+    height: 2px;
+
+}
+
+/* container */
 .container {
-width: 100%;
-margin-left: auto;
-margin-right: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .description {
